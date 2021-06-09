@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sale Books</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+        section {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #112d42;
+        }
+
+            section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: #03a9f4;
+            }
+    </style>
+    <script>src = "AddBook.js"</script>
+</head>
+
+<body id="sale_book">
+    <section id="contact">
+        <div class="container">
+            <div class="contactForm">
+                <h2>Book Details</h2>
+                <form id='addForm'>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='bookName'>
+                        <span>Book Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='authorName'>
+                        <span>Author Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='edition'>
+                        <span>Edition</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='emailAddress'>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='address'>
+                        <span>Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" required id='phoneNumber'>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                    <div class="inputBox w100">
+                        <h4>Records</h4>
+                        <table class="table table-bordered table-hover" id='itemList'>
+                        </table>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <script src='SaleBook.js'></script>
+</body>
+
+</html>

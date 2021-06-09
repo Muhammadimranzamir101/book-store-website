@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orders List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+        section {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #112d42;
+        }
+
+            section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: #03a9f4;
+            }
+    </style>
+    <script>src = "AddBook.js"</script>
+</head>
+<body>
+<br>
+<h3>Orders</h3>
+<br>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Author Name</th>
+        <th scope="col">Edition</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody id = 'tableid'>
+    </tbody>
+  </table>
+  <script src='OrdersList.js'></script>
+</body>
